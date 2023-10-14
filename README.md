@@ -8,4 +8,4 @@ Welcome.
 
 ## section
 
--Recitation 2 [Recitation2](recitation_2_vae/recitation2.ipynb)
+-[Recitation 2](recitation_2_vae/recitation2.ipynb)
