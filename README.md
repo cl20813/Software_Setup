@@ -8,4 +8,4 @@ Welcome.
 
 ## section
 
--[Lecture 1](lectures/lecture-1/lecture-1.ipynb)
+-[Recitation 2](recitation_2_vae/recitation 2.ipynb)
