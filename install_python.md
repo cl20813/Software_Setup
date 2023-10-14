@@ -28,13 +28,13 @@ Here is a helpful [cheatsheet](https://conda.io/projects/conda/en/latest/user-gu
 Also, this is not the best example of channel ordering in a YAML. Better practice would be priority of pytorch > conda-forge > defaults. When people want Pytorch, that should be highest priority, and if Conda Forge is at all needed, it should almost always take precedence over defaults. Otherwise, one risks encountering channel mixing issues.
 
 ### Create an environment from an .yml file
-1. Create an environment from an .yml file                            
+1. Create an environment from an .yml file:                       
 ```conda env create -f name.yml```
 2. To verify that the new environment was installed correctly:               
 ```conda env list```              
-3. Updating an environment             
+3. Updating an environment:             
 ```conda env update --prefix ./env --file environment.yml  --prune```             
-4.Cloning an environment               
+4.Cloning an environment:               
 ```conda create --name new_environment --clone existing_env```       
 verify with           
 ```conda ifo --envs```            
