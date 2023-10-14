@@ -1,4 +1,4 @@
-# MSDS (Professor Gemma Moran and Professor Min Xu)
+# MSDS (Gemma Moran)
 
 ## Installation
 Download Anaconda [here](https://www.anaconda.com/download).
