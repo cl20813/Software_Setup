@@ -1,11 +1,9 @@
-# Learning how to use github 
+# Teaching assistant 
 
-Welcome. 
+Welcome. If you are taking one of the courses I am TAing, you may find some useful things here.
 
-## section
-1. subsection
-2. subsection    [link name](URL)
+## Statistical learning for data science 
 
-## section
+The second recitation will be a review session of some materials in CNN, EM algorithm and VAE.
 
 -[Recitation 2](Recitation_2_vae/Recitation_2.ipynb)
