@@ -39,29 +39,10 @@ Example:
 1. pip install findspark
 1. Open Useres command pormpt and type C:\Users\joonw>pyspark
 
-example code)
 import findspark
 findspark.init()
-
 from pyspark import SparkConf, SparkContext
 
-# Configure Spark
-conf = SparkConf().setAppName("WordCount")
-sc = SparkContext(conf=conf)
-
-# Read input file
-text_file = sc.textFile("input.txt")
-
-# Perform word count
-word_counts = text_file.flatMap(lambda line: line.split(" ")) \
-             .map(lambda word: (word, 1)) \
-             .reduceByKey(lambda a, b: a + b)
-
-# Save results to a file
-word_counts.saveAsTextFile("output")
-
-# Stop Spark context
-sc.stop()
 
 
 
