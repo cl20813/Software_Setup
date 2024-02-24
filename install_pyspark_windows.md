@@ -1,4 +1,4 @@
-# https://www.datacamp.com/tutorial/installation-of-pyspark
+
 
 Pyspark = Python + Apache Spark      
 Apache Spark is a new and open-source framework used in the big data industry for real-time processing and batch processing.    
@@ -43,7 +43,9 @@ import findspark
 findspark.init()              
 from pyspark import SparkConf, SparkContext            
 
-
+## reference 
+[datacamp, a little old one](# https://www.datacamp.com/tutorial/installation-of-pyspark)   
+[second reference](https://www.machinelearningplus.com/pyspark/install-pyspark-on-windows/)            
 
 
 
