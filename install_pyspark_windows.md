@@ -25,10 +25,10 @@ Example:
 
 ## Installing Pyspark
 1. Go to Apache Spark [here](https://spark.apache.org/downloads.html).   
-2. Select the Spark release and package type and download the .tgz file in the third row.                     ex) "Spark 3.5 and hadoop 3.3. and later". Hadoop is not natively supported on Windows so we need to use a utility called 'winutils.exe' to run Spark.          
+2. Select the Spark release and package type and download the .tgz file in the third row.                     ex) "Spark 3.5 and hadoop 3.3. and later".           
 3. Make a new folder called 'spark' in the C directory and extract the given file by using "Winrar". Then create a new environment where variable name is "SPARK_HOME" in the User Variables (you can do it in system variables but has to be consistent).
    ex)C:\spark\spark-3.5.0-bin-hadoop3              
-5. Go to [Winutils](https://github.com/cdarlint/winutils) choose your previously downloaded Hadoop version in 3.35 Then download the winutils.exe file by going inside 'bin'.
+5. Go to [Winutils](https://github.com/cdarlint/winutils) choose your previously downloaded Hadoop version in 3.35 Then download the winutils.exe file by going inside 'bin'. Hadoop is not natively supported on Windows so we need to use a utility called 'winutils.exe' to run Spark.   
 6. Then put the file recently downloaded 'winutils' into SPARK_HOME.             ex) C:\spark\spark-3.5.0-bin-hadoop3         
 7. Again, search "Edit the system environment" and create a new environment where variable name as 'HADOOP_HOME' and variable value to be the same as SPARK_HOME in User Variables.   ex) C:\spark\spark-3.5.0-bin-hadoop3             
 9. Finally double click the 'Path' in system variables and click "new" and copy paste "%Spark_Home%\bin" and %HADOOP_HOME%bin. Then click Okay. Where a new path is created.              
