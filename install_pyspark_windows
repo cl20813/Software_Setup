@@ -6,7 +6,7 @@ Apache Spark is a new and open-source framework used in the big data industry fo
 ## Pre-requisite installation is Python. 
 
 ## Java installation. In my case, it's Windows 64-bit.
-1. Download Java [here](https://www.oracle.com/java/technologies/downloads/)
+1. Download Java -[here](https://www.oracle.com/java/technologies/downloads/)
 2. Go to "Command Prompt" and type "java -version" (space between java and -) to know the version and know whether it is installed or not. 
 3. Copy Java path. In my case, "C:\Program Files\Java\jdk-21".
 4. Go to search bar and "Edit the system environment"
