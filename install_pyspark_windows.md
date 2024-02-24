@@ -44,8 +44,8 @@ findspark.init()
 from pyspark import SparkConf, SparkContext            
 
 ## reference 
-[datacamp, a little old one](# https://www.datacamp.com/tutorial/installation-of-pyspark)   
-[second reference](https://www.machinelearningplus.com/pyspark/install-pyspark-on-windows/)            
+[datacamp, a little old one](https://www.datacamp.com/tutorial/installation-of-pyspark)             
+[second reference](https://www.machinelearningplus.com/pyspark/install-pyspark-on-windows/)                         
 
 
 
