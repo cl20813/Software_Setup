@@ -24,7 +24,11 @@ Apache Spark is a new and open-source framework used in the big data industry fo
 7. For spark, create a new environment where variable name is "Spark_home" and the variable value to be the location of spark, "C:\spark" and click "ok".
 8. Finally double click the 'Path' in system variables and click "new" and copy paste "%Spark_Home%\bin" and click Okay. Where a new path is created.
 
+## You can verify the paths "echo %PYTHONPATH%" in prompt command. 
+
 ## Finalizing Pyspark installation
 1. Open command pormpt and type C:\Users\joonw>pyspark
+
+
 
 
