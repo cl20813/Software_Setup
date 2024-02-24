@@ -36,12 +36,12 @@ Example:
 ## You can verify the paths "echo %PYTHONPATH%" in prompt command. 
 
 ## Finalizing Pyspark installation
-1. pip install findspark
-1. Open Useres command pormpt and type C:\Users\joonw>pyspark
+1. pip install findspark            
+1. Open Useres command pormpt and type C:\Users\joonw>pyspark            
 
-import findspark
-findspark.init()
-from pyspark import SparkConf, SparkContext
+import findspark   
+findspark.init()              
+from pyspark import SparkConf, SparkContext            
 
 
 
