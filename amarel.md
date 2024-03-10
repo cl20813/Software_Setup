@@ -1,6 +1,7 @@
 
-# VPN
-# connect cluster 1) commend line access using ssh, 2) Open OnDemand 3) FastX
+### Rutgers VPN
+
+Connect cluster 1) commend line access using ssh, 2) Open OnDemand 3) FastX.
 
 ## 1) commend line access using ssh
 
@@ -33,9 +34,12 @@ R  (run R)
 quit()   
 exit()   exit compute note        
 
-## 2) Open OnDemand interface (graphical interface)
+## 2) Open OnDemand interface (graphical desktop environment)
 
-http://ondemand.hpc.rutgers.edu      (rutgers vpn should be connected) 
+### Rutgers vpn should be connected 
+https://it.rutgers.edu/virtual-private-network/
+
+http://ondemand.hpc.rutgers.edu      () 
 login     
 interactive apps - amarel desktop - launch novp?   
 or you can use jupyer notebook in interactive apps   
