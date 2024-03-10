@@ -6,11 +6,11 @@ open command prompt and type:
 ssh <jl2815>@amarel.rutgers.edu
 
 ## Experiments
-1.pwd (current working directory)
-2.date (search from paths from 4)
-3.hostname
-4.echo $PATH 
-5.module avail
+1.pwd (current working directory)   
+2.date (search from paths from 4)   
+3.hostname   
+4.echo $PATH    
+5.module avail   
 6.modue use /projects/community/modulefiles/      (this allows you to use softwares not installed in your local computer)
 7.module avail
 8.module spider
