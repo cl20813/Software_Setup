@@ -1,9 +1,14 @@
 
 # VPN
+# connect cluster 1) commend line access using ssh, 2) Open OnDemand 3) FastX
 
-# Connect cluster
+## 1) commend line access using ssh
+
+### Connect login node   
 open command prompt and type:   
-ssh <jl2815>@amarel.rutgers.edu   
+ssh <net_id>@amarel.rutgers.edu   
+
+
 
 ## Experiments
 1.pwd (current working directory)   
@@ -19,17 +24,23 @@ ssh <jl2815>@amarel.rutgers.edu
 11.which R   
 12.ls (list of directory)         
 
-Now we need to connect compute node. The simplest way:   
+### Connect compute node   
+ 
+The simplest way:      
 srun --time==10:00 --pty bash           (jl2815@slepner2815, this will be the compute node)   
 module list   
 R  (run R)   
 quit()   
 exit()   exit compute note        
 
-http://ondemand.hpc.rutgers.edu      (rutgers vpn should be connected) This will give you graphical interface   
+## 2) Open OnDemand interface (graphical interface)
+
+http://ondemand.hpc.rutgers.edu      (rutgers vpn should be connected) 
 login     
 interactive apps - amarel desktop - launch novp?   
 or you can use jupyer notebook in interactive apps   
+
+## 3) FastX interface
 
 http://ondemand.hpc.rutgers.edu:3443   
 This is a fast x a littel different environment more suitable for R. Unlike above, this is not connected to compute note automatically, so you have to connect a compute note again.   
