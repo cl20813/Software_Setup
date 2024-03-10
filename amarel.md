@@ -37,7 +37,9 @@ exit()   exit compute note
 ## 2) Open OnDemand interface (graphical desktop environment)
 
 ### Rutgers vpn should be connected 
--[Download](https://it.rutgers.edu/virtual-private-network/)   
+-[Download](https://vpn1.rutgers.edu/+CSCOE+/logon.html#form_title_text)  
+-activate vpn   
+
 
 http://ondemand.hpc.rutgers.edu     
 login     
