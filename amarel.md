@@ -37,9 +37,9 @@ exit()   exit compute note
 ## 2) Open OnDemand interface (graphical desktop environment)
 
 ### Rutgers vpn should be connected 
-https://it.rutgers.edu/virtual-private-network/
+-[Download](https://it.rutgers.edu/virtual-private-network/)   
 
-http://ondemand.hpc.rutgers.edu      () 
+http://ondemand.hpc.rutgers.edu     
 login     
 interactive apps - amarel desktop - launch novp?   
 or you can use jupyer notebook in interactive apps   
@@ -47,7 +47,7 @@ or you can use jupyer notebook in interactive apps
 ## 3) FastX interface
 
 http://ondemand.hpc.rutgers.edu:3443   
-This is a fast x a littel different environment more suitable for R. Unlike above, this is not connected to compute note automatically, so you have to connect a compute note again.   
+This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
 srun --time==10:00 --pty bash   
 
 
