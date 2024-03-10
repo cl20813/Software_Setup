@@ -38,7 +38,10 @@ exit()   exit compute note
 
 ### Rutgers vpn should be connected 
 -[Download](https://vpn1.rutgers.edu/+CSCOE+/logon.html#form_title_text)  
--activate vpn   
+- activate vpn   
+- start any connect
+- download for windows (cisco) and open cisco
+- enter "vpn.rutgers.edu" to connect: username: netid, password, 2nd password: 6 digit duo
 
 
 http://ondemand.hpc.rutgers.edu     
