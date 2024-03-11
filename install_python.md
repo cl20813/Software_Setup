@@ -50,7 +50,7 @@ If you want to add working environment in your local computer to jupyter noteboo
 1. Open command prompt   
 2. Activate the environment you want to add in jupyter notebook.
 activate jl2815   
-4. conda install -c anaconda ipykernel
+4. conda install -c anaconda ipykernel    (this should be done in an active environment)   
 5. ipython kernel install --user --name=<envname>             (ipython kernel install --user --name=jl2815)
      
 
