@@ -41,6 +41,16 @@ or you can do this:
 4.Cloning an environment:               
 ```conda create --name new_environment --clone existing_env```       
 verify with           
-```conda ifo --envs```            
+```conda ifo --envs```
 
+### Installing packages in Jupyter notebook or Ipython environment.
+Use !pip install numpy instead of pip install numpy if you want to directly install package in a notebook. The latter can't be used in notebook environment.   
+
+If you want to add working environment in your local computer to jupyter notebook.
+1. Open command prompt   
+2. Activate the environment you want to add in jupyter notebook.
+activate jl2815   
+4. conda install -c anaconda ipykernel
+5. ipython kernel install --user --name=<envname>             (ipython kernel install --user --name=jl2815)
+     
 
