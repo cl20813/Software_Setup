@@ -55,9 +55,13 @@ This is a fast x a littel different environment more suitable for R. Unlike Open
 srun --time=10:00 --pty bash   
 
 # Conda commands
-conda remove --name jl2815   
-conda activate jl2815   
-conda deactivate jl2815   
+conda remove --name jl2815     
+conda env remove --name your_environment_name
+conda activate jl2815      
+conda deactivate jl2815       
+conda list  (check installed packages)   
+conda info --root   
+conda which    (similar to above)   
 
 # Python
 
@@ -83,18 +87,30 @@ import plotly.graph_objects as go #  map on globe
 
 conda install numpy pandas matplotlib seaborn scikit-learn   
 conda install pytorch::pytorch torchvision torchaudio -c pytorch  
-conda install netCDF4 xarray jupyter             
+conda install xarray jupyter 
+
+conda install -c conda-forge netCDF4
 #xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
+
+after seeing `UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed)'     
+conda install -c conda-forge --update-deps bottleneck
 
 11. conda deactivate
 
 12. which conda   this will give you the path (/projects/community/anaconda/2023.10/bd387/base/condabin/conda)
-13. Open Ondemand and click personal jupyter. Then set 
-conda path: /projects/community/anaconda/2023.10/bd387/base/condabin/conda
-conda environment:spa_tmp_pr1
+13. Important!
+conda install -c anaconda ipykernel (this should be done in an active environment)    
+ipython kernel install --user --name=spa_tmp_pr1       
+15. Open Ondemand and click personal jupyter. Then open Jupyter 3.
 
 ### Now I want to use the same environment in my local computer.
 
+1. conda env export > spa_tmp_pr1.yml    (in my login node prompt)
+2. send the yml file to my local computer and copy the path of it. 
+3. Open the anaconda powershell prompt and enter   
+conda env create --file /Users/joonw/Downloads/spa_tmp_pr1.yml   ("C:\Users\joonw\Downloads\spa_tmp_pr1.yml"
+
+(why error?)   
  
 
 
