@@ -21,8 +21,10 @@ Here is a helpful [cheatsheet](https://conda.io/projects/conda/en/latest/user-gu
 
 ### Share environment
 1. Both pip packages and conda packages
-```conda env export > environment.yml```
-2. Only include packages you've explicitly asekd for.
+```conda env export > my_env.yml```
+This will make my_env.yml file in current working directory.   
+
+3. Only include packages you've explicitly asekd for.
 ```conda env export --from-history >file.yml```
 
 Also, this is not the best example of channel ordering in a YAML. Better practice would be priority of pytorch > conda-forge > defaults. When people want Pytorch, that should be highest priority, and if Conda Forge is at all needed, it should almost always take precedence over defaults. Otherwise, one risks encountering channel mixing issues.
