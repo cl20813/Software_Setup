@@ -28,7 +28,7 @@ ssh <net_id>@amarel.rutgers.edu
 ### Connect compute node   
  
 The simplest way:      
-srun --time==10:00 --pty bash           (jl2815@slepner2815, this will be the compute node)   
+srun --time=10:00 --pty bash           (jl2815@slepner2815, this will be the compute node)   
 module list   
 R  (run R)   
 quit()   
@@ -53,7 +53,7 @@ or you can use jupyer notebook in interactive apps
 
 http://ondemand.hpc.rutgers.edu:3443   
 This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
-srun --time==10:00 --pty bash   
+srun --time=10:00 --pty bash   
 
 # Python
 Using 2) Open OnDemand, open personal Jupyter. But you need to install your environment in your local jupyter.
