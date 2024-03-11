@@ -32,9 +32,11 @@ Also, this is not the best example of channel ordering in a YAML. Better practic
 ### Create an environment from an .yml file
 1. Create an environment from an .yml file (the file has to be in the current working directory) :                      
 ```conda env create -f name.yml```
-2. To verify that the new environment was installed correctly:               
+or you can do this:
+```conda env create --file /path/to/environment.yml```   
+3. To verify that the new environment was installed correctly:               
 ```conda env list```              
-3. Updating current working environment based on provided .yml file:             
+4. Updating current working environment based on provided .yml file:             
 ```conda env update --prefix ./env --file environment.yml  --prune```             
 4.Cloning an environment:               
 ```conda create --name new_environment --clone existing_env```       
