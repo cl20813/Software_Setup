@@ -17,7 +17,7 @@ ssh <net_id>@amarel.rutgers.edu
 3.hostname       
 4.echo $PATH       
 5.module avail      
-6.modue use /projects/community/modulefiles/      (this allows you to use softwares not installed in your local computer)   
+6.module use /projects/community/modulefiles/      (this allows you to use softwares not installed in your local computer)   
 7.module avail   
 8.module spider   
 9.module avail R        (R/4.1.0-gc563)   
