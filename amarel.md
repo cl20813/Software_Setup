@@ -55,6 +55,11 @@ http://ondemand.hpc.rutgers.edu:3443
 This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
 srun --time==10:00 --pty bash   
 
+# Python
+Using 2) Open OnDemand, open personal Jupyter. But you need to install your environment in your local jupyter.
+
+-[see here ](install_python.md)
+
 
 
 
