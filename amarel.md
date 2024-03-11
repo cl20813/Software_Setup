@@ -10,7 +10,6 @@ open command prompt and type:
 ssh <net_id>@amarel.rutgers.edu   
 
 
-
 ## Experiments
 1.pwd (current working directory)   
 2.date (search from paths from 4)      
@@ -55,10 +54,49 @@ http://ondemand.hpc.rutgers.edu:3443
 This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
 srun --time=10:00 --pty bash   
 
-# Python
-Using 2) Open OnDemand, open personal Jupyter. But you need to install your environment in your local jupyter.
+# Conda commands
+conda remove --name jl2815   
+conda activate jl2815   
+conda deactivate jl2815   
 
--[see here ](install_python.md)
+# Python
+
+1. commend line access using ssh
+Open command prompt and enter "ssh jl2815@amarel.rutgers.edu" and enter the same password for net_id in Rutgers   
+2. module use /projects/community/modulefiles  (check if anaconda is available "module avail")   
+3. module load anaconda/2023.10-bd387
+4. conda init bash   ##configure your bash shell for conda, auto update your .bashrc file
+5. cd  (change directory to home directory)
+6. source .bashrc
+7. mkdir -p .conda/pkgs/cache .conda/envs   ##These are the folders to store your own env you going to build
+
+conda env list
+
+8. conda create --name spa_tmp_pr1  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
+9. conda activate spa_tmp_pr1
+
+import xarray as xr # for netCDF4 
+import pandas as pd
+import numpy as np
+from netCDF4 import Dataset
+import plotly.graph_objects as go #  map on globe
+
+conda install numpy pandas matplotlib seaborn scikit-learn   
+conda install pytorch::pytorch torchvision torchaudio -c pytorch  
+conda install netCDF4 xarray jupyter             
+#xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
+
+11. conda deactivate
+
+12. which conda   this will give you the path (/projects/community/anaconda/2023.10/bd387/base/condabin/conda)
+13. Open Ondemand and click personal jupyter. Then set 
+conda path: /projects/community/anaconda/2023.10/bd387/base/condabin/conda
+conda environment:spa_tmp_pr1
+
+### Now I want to use the same environment in my local computer.
+
+ 
+
 
 
 
