@@ -79,28 +79,19 @@ conda env list
 8. conda create --name spa_tmp_pr1  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
 9. conda activate spa_tmp_pr1
 
-import xarray as xr # for netCDF4 
-import pandas as pd
-import numpy as np
-from netCDF4 import Dataset
-import plotly.graph_objects as go #  map on globe
 
-conda install numpy pandas matplotlib seaborn scikit-learn   
-conda install pytorch::pytorch torchvision torchaudio -c pytorch  
-conda install xarray jupyter 
-
-conda install -c conda-forge netCDF4
+conda install numpy pandas matplotlib seaborn scikit-learn    
+conda install xarray jupyter netCDF4
 #xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
 
 after seeing `UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed)'     
-conda install -c conda-forge --update-deps bottleneck
-
-11. conda deactivate
+conda install -c conda-forge --update-deps bottleneck or just !pip install bottleneck in notebook.
 
 12. which conda   this will give you the path (/projects/community/anaconda/2023.10/bd387/base/condabin/conda)
 13. Important!
 conda install -c anaconda ipykernel (this should be done in an active environment)    
-ipython kernel install --user --name=spa_tmp_pr1       
+ipython kernel install --user --name=spa_tmp_pr1
+11. conda deactivate   
 15. Open Ondemand and click personal jupyter. Then open Jupyter 3.
 
 ### Now I want to use the same environment in my local computer.
