@@ -7,7 +7,7 @@ Connect cluster 1) commend line access using ssh, 2) Open OnDemand 3) FastX.
 
 ### Connect login node   
 open command prompt and type:   
-ssh <net_id>@amarel.rutgers.edu   
+ssh jl2815@amarel.rutgers.edu    (ssh <net_id>@amarel.rutgers.edu)    
 
 
 ## Experiments
