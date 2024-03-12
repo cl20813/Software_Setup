@@ -48,11 +48,15 @@ login
 interactive apps - amarel desktop - launch novp?   
 or you can use jupyer notebook in interactive apps   
 
-## 3) FastX interface
+## 3) FastX interface (for R studio)
 
 [http://ondemand.hpc.rutgers.edu:3443](https://amarel.hpc.rutgers.edu:3443/)   
 This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
-srun --time=10:00 --pty bash   
+  
+srun --cpus-per-task=2 --time=00:45:00 --pty bash  (2 node)   
+module load singularity/3.8.5 (may need to check module --show-hidden avail to find the latest version)
+module use /projects/community/modulefiles/   
+singularity run --app rstudio /projects/community/singularity.images/rstudio/r402rstudio11.sif-gc563     (run(space)-app(space)   
 
 # Conda commands
 conda remove --name jl2815     
