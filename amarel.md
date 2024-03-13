@@ -91,6 +91,8 @@ conda install xarray jupyter netCDF4
 after seeing `UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed)'     
 conda install -c conda-forge --update-deps bottleneck or just !pip install bottleneck in notebook.
 
+conda install -c conda-forge --update-deps bottleneck (this resolved my issue)
+
 12. which conda   this will give you the path (/projects/community/anaconda/2023.10/bd387/base/condabin/conda)
 13. Important!
 conda install -c anaconda ipykernel (this should be done in an active environment)    
