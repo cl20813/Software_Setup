@@ -9,5 +9,6 @@ The second recitation will be a review session of some materials in CNN, EM algo
 -[Recitation 2](Recitation_2_vae/Recitation_2.ipynb)
 
 ## Amarel
+https://amarel.hpc.rutgers.edu
 
 https://amarel.hpc.rutgers.edu:3443/auth/ssh
