@@ -21,7 +21,7 @@ Example:
 1) C:\Users\joonw\AppData\Local\Programs\Python\Python312\Scripts\  
 2) C:\Users\joonw\AppData\Local\Programs\Python\Python312\   
 3) C:\Users\joonw\AppData\Local\Programs\Python\Launcher\
-4) C:\Program Files\Java\jdk-21\bin
+4) C:\Program Files\Java\jdk-17\bin
 
 ## Installing Pyspark
 1. Go to Apache Spark [here](https://spark.apache.org/downloads.html).   
