@@ -8,11 +8,11 @@ Apache Spark is a new and open-source framework used in the big data industry fo
 ## Java installation. In my case, it's Windows 64-bit.
 1. Download Java [here](https://www.oracle.com/java/technologies/downloads/)   
 2. Go to "Command Prompt" and type "java -version" (space between java and -) to know the version and know whether it is installed or not.    
-3. Copy Java path. In my case, "C:\Program Files\Java\jdk-21".   
-4. Go to search bar and "Edit the system environment"   
+3. Copy Java path. In my case, "C:\Program Files\Java\jdk-17".    #### spark 3.5 is compatible with Java 17. Downgrade Java if necessary.
+4. Go to search bar and "Edit the system environment"    
 5. Click into the "Environment Variables".   
-6. Click into "New" in User variables and use variable name as "JAVA_HOME" and copy paste java path into variable value. Then click 'Ok'.   
-7. Add the variable name as "PATH" and path value as "C:\Program Files\Java\jdk-21\bin", which is your location of Java bin file. Click 'OK'.
+6. Click into "New" in User variables (not sure if I should have done this under System Variables) and use variable name as "JAVA_HOME" and copy paste java path into variable value. Then click 'Ok'.   
+7. Add the variable name as "PATH" and path value as "C:\Program Files\Java\jdk-17\bin", which is your location of Java bin file. Click 'OK'.
 
 ## Python installation
 If you have installed Python via Anaconda, I suggest to download Python from their official website. [here](https://www.python.org/downloads/)   
