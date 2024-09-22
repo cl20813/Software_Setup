@@ -19,4 +19,4 @@ https://amarel.hpc.rutgers.edu:3443/auth/ssh
 
 ## Make my own package
 
--[Make and share environment](howtomakepackage.ipynb)
+-[Make my own package](howtomakepackage.ipynb)
