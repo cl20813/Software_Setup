@@ -12,3 +12,11 @@ The second recitation will be a review session of some materials in CNN, EM algo
 https://amarel.hpc.rutgers.edu
 
 https://amarel.hpc.rutgers.edu:3443/auth/ssh
+
+## Install environment
+
+-[Make and share environment](install_python.md)
+
+## Make my own package
+
+-[Make and share environment](install_python.md)
