@@ -49,7 +49,7 @@ login
 interactive apps - amarel desktop - launch novp?   
 or you can use jupyer notebook in interactive apps   
 
-## 3) FastX interface (for R studio)
+## 3) FastX interface (for R studio) You can use gpu
 
 [http://ondemand.hpc.rutgers.edu:3443](https://amarel.hpc.rutgers.edu:3443/)   
 This is a fast x a littel different environment more suitable for R. Unlike Open OnDemandabove, this is not connected to compute note automatically, so you have to connect a compute note again.   
