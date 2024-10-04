@@ -18,11 +18,12 @@ ssh jl2815@amarel.rutgers.edu    (ssh <net_id>@amarel.rutgers.edu)
 5.module avail      
 6.module use /projects/community/modulefiles/      (this allows you to use softwares not installed in your local computer)   
 7.module avail   
-8.module spider   
+8.module spider    # more detail
 9.module avail R        (R/4.1.0-gc563)   
 10.module load R/4.1.0-gc563   
 11.which R   
-12.ls (list of directory)         
+12.ls (list of directory)       
+13. module purge   : To clear-out your added modules:
 
 ### Connect compute node   
  
