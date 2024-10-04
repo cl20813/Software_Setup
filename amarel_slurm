@@ -1,0 +1,143 @@
+### SLURM = resource manager/ job scheduler
+1. Enables scripting of computational tasks
+2. SLURM  runs these tasks on compute nodes and returns the results (output files)
+3. If the cluster if full, SLURM holds your tasks and runs them when the resources are available.
+4. SLURM ensures fair sharing of cluster resources (plociy enforcement)
+
+### 
+
+scontrol
+sinfo -a --summarize      view nodes and partition info
+sbatch job-script [options]             ** important!  submit/setup a batch job
+srun [options] program_name  Run a porgram (exe,application)
+squeue -u NetID  check status of job submissions
+sstat -u jobID  check status of a running job
+sacct --format [options] -j jobID   see aaccounting details of current and completed jobs
+scancel 
+
+(see chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://slurm.schedmd.com/pdfs/summary.pdf  )
+
+### batch job                                      interactive job
+sbatch job-script                                  srun [required resources] your.exe
+starts when requested resources are available      starts when requested resources are available
+Runs 'in the background'
+Use srun to launch tasks inside your script        you are actively logged-in (running a shell) on a compute node
+Terminate batch jobs using                         Terminate interactive jobs by simply logging-out (using exit or CTRL-D)
+scancel jobID                    
+
+useful for jobs that will run for a long time,     Useful for testing, compiling code, computational steering, etc. 
+like 12 hours and for jobs that don't require  
+interaction or supervision
+
+
+Interactive jobs
+srun --time=2:00:00 --pty bash        (time cpu ram default 1 cpu, 2 gb ram)  pty bash tells what do you want to do        srun -p main -c 3 --mem=10G --pty bash
+exit (when finished)
+
+
+Multi-core/ parallel task example:
+srun --ntasks=4 --mpi=pmi2 --time=2:00:00 --pty bash
+exit (when finished)
+
+# batch file
+Step 1: Create a Batch Script File
+For example, to use nano:
+
+nano myjob.sh       ((This command opens a new file called myjob.sh in the nano text editor, from here, I can copy and paste my Slurm script, $!\bin\bash section below)
+
+Step 2: Copy and paste below
+
+#!/bin/bash
+#SBATCH --partition=main       
+#SBATCH --job-name=my_python_job        # Job name
+#SBATCH --array=1-240   # tells Slurm to create an array of 240 separate jobs, with job IDs ranging from 1 to 240.  
+#SBATCH --nodes=1                       # Number of nodes
+#SBATCH --ntasks=1                      # Number of tasks
+#SBATCH --cpus-per-task=16               # Number of CPU cores per task
+#SBATCH --exclusive (booking the node myself I dont want other use on that computer node at the same time)
+#SBATCH --mem= 118G                       # Memory per node         ( --mem=0 means use all available ram)
+#SBATCH --time=5:00:00  ( max at three days, 72 hours  if long, need more wait time to allocate the time)
+#SBATCH --output=slurm.%N.%j.out 
+#SBATCH --error=slurm.%N.%j.err
+#SBATCH --mail-user = [Net ID]@rutgers.edu
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --export=ALL
+
+(if .py file is located in a different directory from which you are submitting slurm jobs, we can use absolute path: srun python /home/username/scripts/my_script.py > output_file 2> error_file)
+srun my-exe -t 16 input> output  ( srun python my_script.py > output_file 2> error_file)                          srun is used to launch tasks (like running your Python script) under the resource allocation from Slurm.  -t 16 option indicates CPU , you redirect the output (>) and error messages (2v) if necessary
+sacct --format MaxRSS,Elapsed -j $SLURM_JOBID  (This will print out the maximum memory used MaxRSS and the elapsed time Elapsed after your job completes  $SLURM_JOBID is a system provided environment variable represents job ID assigned by Slurm. 
+
+>: redirects standard output (stdout) (the normal output of your script) to file
+2>: redirects standard error(stderr) (error messages, warning, etc.) to a file. 
+
+
+
+kill just one, or just a few jobs:
+scancel [jobID] [jobID] ...
+kill all of your jobs
+scancel --user=[NetID]
+kill all of your queud jobs:
+scancel --user=[NetID] --state=PENDING
+kill all of your running jobs:
+scancel --user=[Net ID] --state=RUNNING
+
+Copy example files to your /home directory:
+cd \scratch\[NetID]
+cd -r \projects\oarc\users\training\intro.amarel .     (dont forget space and .  it means copy the files here to my current location)
+cd intro.amarel
+ls
+
+
+## exercise
+## If you are connect to Amarel cluster, exit so that you can copy and paste the file as below
+scp "C:\Users\joonw\Intern\quant\Joonwon Lee_Resume_Q.pdf" jl2815@amarel.rutgers.edu:/home/jl2815/
+#navigate 
+cd /home/jl2815/
+#list the files
+ls
+
+## another
+
+# Step 1: Copy the file I want to run
+
+scp "C:\Users\joonw\Intern\quant\test1.py" jl2815@amarel.rutgers.edu:/home/jl2815/GEMS
+
+# step 2: Create the Slurm Batch Script
+Now log back to 
+ssh jl2815@amarel.rutgers.edu
+nano myjob.sh
+
+
+# Step 3: Inside the nano editor, paste the following script:
+#!/bin/bash
+#SBATCH --job-name=python_test_job        # Job name
+#SBATCH --output=/home/jl2815/GEMS/output_%j.out            # Standard output file (%j = JobID)
+#SBATCH --error=/home/jl2815/GEMS/error_%j.err              # Standard error file (%j = JobID)
+#SBATCH --time=00:05:00                   # Maximum time (5 minutes)
+#SBATCH --ntasks=1                        # Number of tasks
+#SBATCH --cpus-per-task=1                 # Number of CPU cores per task
+#SBATCH --mem=1G                          # Memory per node
+#SBATCH --partition=main              # Partition to submit to
+
+# Run the Python script
+srun python /home/jl2815/GEMS/test1.py
+
+Then Ctrl+x to exit
+
+Step 4:  Submit the job
+sbatch myjob.sh (after this I see the message Submitted batch job 38868490)      location of the output is determined by this
+
+IF ASK File name to write: myjob.sh
+
+# Check the output
+cat output_<jobID>.out         #actual job i d
+cat output_38868525.out # I got the result
+cat error_38868490.err
+
+exit the amarel
+exit
+
+scp jl2815@amarel.rutgers.edu:/home/jl2815/output_38868525.out C:/Users/joonw/Downloads/
+
+
+
