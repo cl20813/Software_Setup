@@ -52,7 +52,7 @@ Step 2: Copy and paste below
 #SBATCH --job-name=my_python_job        # Job name
 #SBATCH --array=1-240   # tells Slurm to create an array of 240 separate jobs, with job IDs ranging from 1 to 240.  
 #SBATCH --nodes=1                       # Number of nodes
-#SBATCH --ntasks=1                      # Number of tasks
+#SBATCH --ntasks=1                      # Number of tasks  (for MPI: Message Passing Interface, for communicatiob between nodes if I can distribute tasks across multiple nodes)
 #SBATCH --cpus-per-task=16               # Number of CPU cores per task
 #SBATCH --exclusive (booking the node myself I dont want other use on that computer node at the same time)
 #SBATCH --mem= 118G                       # Memory per node         ( --mem=0 means use all available ram)
