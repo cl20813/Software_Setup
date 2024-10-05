@@ -68,26 +68,38 @@ conda list  (check installed packages)
 conda info --root   
 conda which    (similar to above)   
 
-# Python
+# Python packages
 
 1. commend line access using ssh
 Open command prompt and enter "ssh jl2815@amarel.rutgers.edu" and enter the same password for net_id in Rutgers   
 2. module use /projects/community/modulefiles  (check if anaconda is available "module avail")   
-3. module load anaconda/2023.10-bd387
+3. module load anaconda/2024.06-ts840
 4. conda init bash   ##configure your bash shell for conda, auto update your .bashrc file
-5. cd  (change directory to home directory)
-6. source .bashrc
-7. mkdir -p .conda/pkgs/cache .conda/envs   ##These are the folders to store your own env you going to build
+# conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell. 
+# Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands. 
+# Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS. 
+6. cd  (change directory to home directory)
+7. source .bashrc  # this command is used to reload the .bashrc file
+8. mkdir -p .conda/pkgs/cache .conda/envs   ##These are the folders to store your own env you going to build
 
 conda env list
 
-8. conda create --name spa_tmp_pr1  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
-9. conda activate spa_tmp_pr1
-
+8. conda create --name gems_tco  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
+9. conda activate gems_tco
+conda install conda=24.9.1
 
 conda install numpy pandas matplotlib seaborn scikit-learn    
-conda install xarray jupyter netCDF4
+conda install xarray jupyter netCDF4 collections skgstat typing scipy math
 #xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
+
+ 
+
+
+
+
+
+
+
 
 after seeing `UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed)'     
 conda install -c conda-forge --update-deps bottleneck or just !pip install bottleneck in notebook.
