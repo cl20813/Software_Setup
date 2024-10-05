@@ -13,10 +13,10 @@ https://amarel.hpc.rutgers.edu
 
 https://amarel.hpc.rutgers.edu:3443/auth/ssh
 
-## Make and share environments in Python
+## Creating and sharing environments in Python
 
 -[Make and share environment](install_python.md)
 
-## Make my own package in Python
+## Creating my own package in Python
 
 -[Make my own package](howtomakepackage.ipynb)
