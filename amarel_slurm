@@ -88,15 +88,9 @@ cd intro.amarel
 ls
 
 
-## exercise
-## If you are connect to Amarel cluster, exit so that you can copy and paste the file as below
-scp "C:\Users\joonw\Intern\quant\Joonwon Lee_Resume_Q.pdf" jl2815@amarel.rutgers.edu:/home/jl2815/
-#navigate 
-cd /home/jl2815/
-#list the files
-ls
 
-## another
+
+## Exercise
 
 # Step 1: Copy the file I want to run
 
