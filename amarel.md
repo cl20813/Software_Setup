@@ -75,9 +75,13 @@ Open command prompt and enter "ssh jl2815@amarel.rutgers.edu" and enter the same
 2. module use /projects/community/modulefiles  (check if anaconda is available "module avail")   
 3. module load anaconda/2024.06-ts840
 4. conda init bash   ##configure your bash shell for conda, auto update your .bashrc file
-# conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell. 
-# Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands. 
-# Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS. 
+
+'''
+ conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell. 
+ Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands. 
+ Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS. 
+'''
+
 6. cd  (change directory to home directory)
 7. source .bashrc  # this command is used to reload the .bashrc file
 8. mkdir -p .conda/pkgs/cache .conda/envs   ##These are the folders to store your own env you going to build
@@ -89,10 +93,12 @@ conda env list
 conda install conda=24.9.1
 
 conda install numpy pandas matplotlib seaborn scikit-learn    
-conda install xarray jupyter netCDF4 collections skgstat typing scipy math
+conda install xarray jupyter netCDF4 collections  typing scipy math   # collections and math are part of python standard library, so you don't need to instaall them, and skgstat might be third party, I have to use pip
 #xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
 
- 
+# Install my package
+pip install -e /home/jl2815/tco/GEMS_TCO   # -e stands for editable
+pip show GEMS_TCO
 
 
 
