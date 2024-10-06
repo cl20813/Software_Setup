@@ -11,7 +11,7 @@ sinfo -a --summarize      view nodes and partition info
 sbatch job-script [options]             ** important!  submit/setup a batch job
 srun [options] program_name  Run a porgram (exe,application)
 squeue -u NetID  check status of job submissions
-sstat -u jobID  check status of a running job
+sstat -j jobID  check status of a running job
 sacct --format [options] -j jobID   see aaccounting details of current and completed jobs
 scancel 
 
