@@ -16,6 +16,12 @@
 
 -[Download Visual Studio](https://visualstudio.microsoft.com/)
 
+Select the DESKTOP DEVELOPMENT WITH C++ workload.
+
 -[Download Resharper C++](https://www.jetbrains.com/resharper-cpp/download/download-thanks.html?platform=windows)
+
+Make sure to select the C++ option. Then register JetBrains Product for students.
+
+
 
 
