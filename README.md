@@ -20,10 +20,11 @@ The second recitation will be a review session of some materials in CNN, EM algo
 
 -[Create an environment on Rutgers Amarel](Recitation_2_vae/amarel.md)
 
-Install my package on Amarel
 -[Install mypackage on Amarel](install_mypackage_amarel)
 
 ## C++ (visual studio + Resharper C++)
+
+-[Download Visual Studio](https://visualstudio.microsoft.com/)
 
 -[Download Resharper C++](https://www.jetbrains.com/resharper-cpp/download/download-thanks.html?platform=windows)
 
