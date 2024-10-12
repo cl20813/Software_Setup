@@ -6,7 +6,7 @@
 
 -[Make my own package](howtomakepackage.ipynb)
 
-## Rutgers Amarel
+## Rutgers Amarel (High Performance Cluster for Computing)
 
 -[Create an environment on Rutgers Amarel](Recitation_2_vae/amarel.md)
 
