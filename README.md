@@ -26,10 +26,10 @@ Installing Eigen (including unsupported Modules), gsl libraries.
 
 -[Download git](https://git-scm.com/downloads/win)
 
--Open the git bash and then install vcpkg, by running:
-git clone https://github.com/microsoft/vcpkg
+-Open the git bash and then install vcpkg, by running:        
+git clone https://github.com/microsoft/vcpkg              
 
--Navigate to the vcpkg directory and bootstrap, by running:
+-Navigate to the vcpkg directory and bootstrap, by running:           
 cd vcpkg       
 ./bootstrap-vcpkg.bat          
 
