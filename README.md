@@ -8,7 +8,7 @@
 
 ## Rutgers Amarel (High Performance Cluster for Computing)
 
--[Create an environment on Rutgers Amarel](Recitation_2_vae/amarel.md)
+-[Create an environment on Rutgers Amarel](amarel.md)
 
 -[Install mypackage on Amarel](install_mypackage_amarel)
 
