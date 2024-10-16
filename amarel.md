@@ -10,17 +10,17 @@ Open command prompt and enter "ssh jl2815@amarel.rutgers.edu" and enter the same
 4. module load anaconda/2024.06-ts840
 5. conda init bash   ##configure your bash shell for conda, auto update your .bashrc file
 
-''' You may skip ''' ~ ''' part. 
- conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell. 
- Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands. 
- Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS. 
-'''
+''' You may skip this part.                 
+ conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell.            
+ Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands.                    
+ Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS.                          
+'''                    
+                 
+6. cd  (change directory to home directory)     
+7. source .bashrc  # this command is used to reload the .bashrc file      
+8. mkdir -p .conda/pkgs/cache .conda/envs   ## This is the folder to store your own enviornment you going to build.    
 
-6. cd  (change directory to home directory)
-7. source .bashrc  # this command is used to reload the .bashrc file
-8. mkdir -p .conda/pkgs/cache .conda/envs   ## This is the folder to store your own enviornment you going to build.
-
-conda env list    (View if there are any other environments already exist)
+conda env list    (View if there are any other environments already exist)       
 
 8. conda create --name gems_tco  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
 9. conda activate gems_tco
