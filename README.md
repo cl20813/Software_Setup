@@ -2,15 +2,15 @@
 
 -[Make and share environment](install_python.md)
 
-## Creating my own package in Python
-
--[Make my own package](howtomakepackage.ipynb)
-
 ## Rutgers Amarel (High Performance Cluster for Computing)
 
 -[Create an environment on Rutgers Amarel](amarel_environment.md)
 
 -[Install mypackage on Amarel](install_mypackage_amarel)
+
+## Creating my own package in Python
+
+-[Make my own package](howtomakepackage.ipynb)
 
 ## C++ (visual studio + Resharper C++)
 
