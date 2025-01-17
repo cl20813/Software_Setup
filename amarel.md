@@ -1,35 +1,52 @@
+# Remove previous environment
+conda deactivate
+conda env remove -n gems_tco
+conda create -n gems_tco python=3.8
+conda activate gems_tco
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
+# Display conda list
+conda info --envs
+conda env list
 
 
 # Create my environment in Python packages
 
-1. commend line access using ssh
-Open command prompt and enter "ssh jl2815@amarel.rutgers.edu" and enter the same password for net_id in Rutgers   
-2. module use /projects/community/modulefiles 
-3. module avail         (this will show you available versions for anaconda)
-4. module load anaconda/2024.06-ts840
-5. conda init bash   ##configure your bash shell for conda, auto update your .bashrc file
+1. ```ssh jl2815@amarel.rutgers.edu```               # Access the command line using SSH
+2. ```module use /projects/community/modulefiles```  # Use the community module files
+3. ```module avail```                                # Check available Anaconda versions
+4. ```module load anaconda/2024.06-ts840```          # Load the desired Anaconda module
+5. ```conda init bash```                             # Initialize Conda for Bash
+                                                 configure your bash shell for conda(adds necessary Conda initialization code to your .bashrc.), auto update your .bashrc file
+                                                 This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell.
+7. ```cd```
+8. ```source ~/.bashrc```                            # Source the .bashrc file: This command reloads the .bashrc file, applying the changes made by conda init bash.
+9. ```mkdir -p .conda/pkgs/cache .conda/envs```      # It's a preparatory step to ensure you have a dedicated space for your environments and packages.
+                                                 .conda/pkgs/cache: This directory can be used to store cached packages.
+                                                 .conda/envs: This directory is where you can store your Conda environments.
+10. ```conda create --prefix /home/jl2815/.conda/envs/gems_tco python=3.8```
+                                               # Create the gems_tco environment within the .conda/envs directory. This keeps your environments organized and separate from the default Conda
+# conda update conda                           # (I DON'T HAVE PERMISSION TO WRITE). Upgrade the latest version of conda from *base environment         # check conda --version
 
-''' You may skip this part.                 
- conda init bash adds necessary configuration code to your .bashrc. This configuration ensures that the conda command and Conda environments are available every time you opne a new terminal session in the bash shell.            
- Bash shell is a command-line interpret or shell used in many Unix-like operating systems. It allows useres to interact with the operating system by typing commands.                    
- Command Prompt in Windows is command-line interface(CLI) for Windows, bash is primarily used in Unix-like systems such as Linux and macOS.                          
-'''                    
-                 
-6. cd  (change directory to home directory)     
-7. source .bashrc  # this command is used to reload the .bashrc file      
-8. mkdir -p .conda/pkgs/cache .conda/envs   ## This is the folder to store your own enviornment you going to build.    
+11. ```module avail cuda```                          # You need to load the CUDA module before installing Pytorch with CUDA support. 
+    ```module load cuda/12.1.0```
 
-conda env list    (View if there are any other environments already exist)       
+12. ```conda activate gems_tco```
 
-8. conda create --name gems_tco  tensorflow==2.3 python=3.8      (/home/<netID>/.conda/envs/tf2)
-9. conda activate gems_tco
-conda install conda=24.9.1        # upgrade the latest version of conda. 
-conda install numpy pandas matplotlib seaborn scikit-learn    
-conda install xarray jupyter netCDF4 collections  typing scipy math   # collections and math are part of python standard library, so you don't need to instaall them, and skgstat might be third party, I have to use pip
-#xarray for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
+13-1 Install Pytorch, torchvision, torchaudio, and CUDA:
+```conda install pytorch torchvision torchaudio pytorch-cuda=12.1.0 -c pytorch -c nvidia```   # numpy is installed automatically
+13-2 Install TensorFlow:
+```conda install tensorflow```
+13-3 Install additional Python packages:
+```conda install pandas matplotlib seaborn scikit-learn```
+```conda install xarray jupyter netCDF4 typing scipy```                # collections and math are part of python standard library.
+                                                                   xarray is for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
+13-4 Install third-party packages using pip                      # You may not be able to install some of the packages using conda install. Then use pip. Not all packages are included in Conda's repositories.
+pip install skgstat
 
-# You may not be able to install some of the packages using conda install. Then use pip.
+
+
+
 pip install <package name>
 
 
