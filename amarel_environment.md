@@ -27,17 +27,17 @@
 ```conda install tensorflow```
 13-3 Install additional Python packages:
 ```conda install pandas matplotlib seaborn scikit-learn```
-```conda install xarray jupyter netCDF4 typing scipy```           # collections and math are part of python standard library.
-                                                                   xarray is for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
-13-4 Install third-party packages using pip                      # You may not be able to install some of the packages using conda install. Then use pip. Not all packages are included in Conda's repositories.
-```pip install scikit-gstat```                                  #import skgstat  !pip in a jupyter notebook
-```pip list | grep scikit-gstat```
-13-5 Install my package 'gems_tco'
-```pip install -e /home/jl2815/tco/```
-13-6 Verify installation
-```pip list | grep GEMS_TCO```           
-```python -c "import GEMS_TCO; print('GEMS_TCO imported successfully')"``` 
-```pip show GEMS_TCO```
+```conda install xarray jupyter netCDF4 typing scipy```           # collections and math are part of python standard library.        
+                                                                   xarray is for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.       
+13-4 Install third-party packages using pip                      # You may not be able to install some of the packages using conda install. Then use pip. Not all packages are included in Conda's repositories.        
+```pip install scikit-gstat```                                  #import skgstat  !pip in a jupyter notebook       
+```pip list | grep scikit-gstat```                   
+13-5 Install my package 'gems_tco'       
+```pip install -e /home/jl2815/tco/```         
+13-6 Verify installation        
+```pip list | grep GEMS_TCO```                
+```python -c "import GEMS_TCO; print('GEMS_TCO imported successfully')"```      
+```pip show GEMS_TCO```    
 
 ----------------------------------------------------------------------------------------------------------------------
 You can also use OnDemand interface or FastX interface to use amarel.
