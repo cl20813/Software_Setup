@@ -1,13 +1,3 @@
-## Display conda list
-```conda info --envs```
-```conda env list```
-
-## Remove previous environment
-```conda deactivate```
-```conda env remove -n gems_tco```
-
-
-
 ## Create my environment in Python packages
 
 1. ```ssh jl2815@amarel.rutgers.edu```               # Access the command line using SSH
@@ -76,61 +66,47 @@ module load singularity/3.8.5 (may need to check module --show-hidden avail to f
 module use /projects/community/modulefiles/   
 singularity run --app rstudio /projects/community/singularity.images/rstudio/r402rstudio11.sif-gc563     (run(space)-app(space)   
 
-# other Conda commands
-conda remove --name jl2815     
-conda env remove --name your_environment_name
-conda activate jl2815      
-conda deactivate jl2815       
-conda list  (check installed packages)   
-conda info --root   
-conda which    (similar to above)   
+## Other Conda commands
+```conda remove --name jl2815```   
+```conda env remove --name your_environment_name```
+```conda activate jl2815```      
+```conda deactivate jl2815```       
+```conda list```  (check installed packages)   
+```conda info --root```   
+```which conda```    (similar to above)   
+```which python```
 
-## Other exercises
-1.pwd (current working directory)   
-2.date (search from paths from 4)      
-3.hostname       
-4.echo $PATH       
-8.module spider    # more detail
-9.module avail R        (R/4.1.0-gc563)   
-10.module load R/4.1.0-gc563               module load R/4.1.0-gc563
-11.which R   
-12.ls (list of directory)       
-13. module purge   : To clear-out your added modules:
+```pwd``` (current working directory)   
+```date``` (search from paths from 4)      
+```hostname```       
+```echo $PATH```       
+```module spider```    # more detail
+```module avail R```        (R/4.1.0-gc563)   
+```module load R/4.1.0-gc563```               module load R/4.1.0-gc563
+```which R```   
+```ls``` (list of directory)       
+```module purge```   : To clear-out your added modules:
 
-### Connect compute node   
- 
-The simplest way:      
-srun --time=10:00 --pty bash           (jl2815@slepner2815, this will be the compute node)   
-module list   
-R  (run R)   
-quit()   
-exit()   exit compute note  
+#### Display conda list
+```conda info --envs```
+```conda env list```
 
+#### Remove previous environment
+```conda deactivate```
+```conda env remove -n gems_tco```
 
 
+## Now I want to use the same environment on my local computer.
+
+1. Export the environment:
+```conda env export > gems_tco.yml```   
+2. Transfer the .yml file to your local computer.
+3. Create the environment on your local computer:
+Open the anaconda powershell prompt and enter.
+```conda env create --file C:\Users\joonw\Downloads\gems_tco.yml```
 
 
 
-after seeing `UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed)'     
-conda install -c conda-forge --update-deps bottleneck or just !pip install bottleneck in notebook.
-
-conda install -c conda-forge --update-deps bottleneck (this resolved my issue)
-
-12. which conda   this will give you the path (/projects/community/anaconda/2023.10/bd387/base/condabin/conda)
-13. Important!
-conda install -c anaconda ipykernel (this should be done in an active environment)    
-ipython kernel install --user --name=spa_tmp_pr1
-11. conda deactivate   
-15. Open Ondemand and click personal jupyter. Then open Jupyter 3.
-
-### Now I want to use the same environment in my local computer.
-
-1. conda env export > spa_tmp_pr1.yml    (in my login node prompt)
-2. send the yml file to my local computer and copy the path of it. 
-3. Open the anaconda powershell prompt and enter   
-conda env create --file /Users/joonw/Downloads/spa_tmp_pr1.yml   ("C:\Users\joonw\Downloads\spa_tmp_pr1.yml"
-
-(why error?)   
  
 
 
