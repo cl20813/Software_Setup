@@ -1,5 +1,3 @@
-# MSDS (Gemma Moran)
-
 ## Installation
 Download Anaconda [here](https://www.anaconda.com/download).
 (Note: there are a variety of different python distributions; for statistics and machine learning, we recommend Anaconda.)
