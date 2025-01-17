@@ -6,7 +6,7 @@
 
 -[Create an environment on Rutgers Amarel](amarel_environment.md)
 
--[Install mypackage on Amarel](install_mypackage_amarel)
+-[Install mypackage on Amarel](install_mypackage_amarel.md)
 
 ## Creating my own Python package on a local computer
 
