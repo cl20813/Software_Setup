@@ -8,7 +8,7 @@
 
 -[Install mypackage on Amarel](install_mypackage_amarel)
 
-## Creating my own package in Python
+## Creating my own Python package on a local computer
 
 -[Make my own package](howtomakepackage.ipynb)
 
