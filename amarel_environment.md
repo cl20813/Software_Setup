@@ -52,9 +52,6 @@ You can also use OnDemand interface or FastX interface to use amarel.
 - enter "vpn.rutgers.edu" to connect: username: netid, password, 2nd password: 6 digit duo
 
 http://ondemand.hpc.rutgers.edu     
-login     
-interactive apps - amarel desktop - launch novp?   
-or you can use jupyer notebook in interactive apps   
 
 ## FastX interface (for R studio) You can use gpu for this
 
