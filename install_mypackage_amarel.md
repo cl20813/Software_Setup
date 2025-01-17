@@ -25,11 +25,10 @@
   
 To make the change permanent, update your ```.bashrc```  
 ```nano ~/.bashrc```   
-Add the following line at the end   
-```export PATH="/home/jl2815/.conda/envs/gems_tco/bin:$PATH"```   
-Save the file and reload your shell:   
-```source ~/.bashrc```   
-Activate my environmnet again   
+Replace every ```2023.10/bd387/base``` with ```2024.06/ts840```          # merely adding ```export PATH="/home/jl2815/.conda/envs/gems_tco/bin:$PATH"```  at the end of the line does not solve the problem   
+Save the file and reload your shell:         
+```source ~/.bashrc```        
+Activate my environmnet again    
 ```conda activate gems_tco```   
-```which python```   
+```which python```    
 Now you see the path: ```~/.conda/envs/gems_tco/bin/python```
