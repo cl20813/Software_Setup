@@ -2,8 +2,8 @@
 Download Anaconda [here](https://www.anaconda.com/download).
 (Note: there are a variety of different python distributions; for statistics and machine learning, we recommend Anaconda.)
 
-### Creating an environment for MSDS-534
-We recommend creating a virtual environment for your MSDS-534 coding projects.
+### Creating an environment 
+
 1. Open Terminal
 2. Create an environment called `msds534` using `conda` with the command:
    ```conda create --name msds534```
