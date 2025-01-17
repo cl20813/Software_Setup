@@ -39,7 +39,7 @@
 ```python -c "import GEMS_TCO; print('GEMS_TCO imported successfully')"```      
 ```pip show GEMS_TCO```    
 
-### Debugging when python and conda does not match.    
+### Debugging when python and conda do not match.    
 ```which python``` gives ```/projects/community/anaconda/2024.06/ts840/bin/python```, so I am not using the python under ```gems_tco''' package.    
   
 To make the change permanent, update your ```.bashrc```  
