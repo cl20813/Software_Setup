@@ -1,16 +1,14 @@
-# Remove previous environment
-conda deactivate
-conda env remove -n gems_tco
-conda create -n gems_tco python=3.8
-conda activate gems_tco
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+## Display conda list
+```conda info --envs```
+```conda env list```
 
-# Display conda list
-conda info --envs
-conda env list
+## Remove previous environment
+```conda deactivate```
+```conda env remove -n gems_tco```
 
 
-# Create my environment in Python packages
+
+## Create my environment in Python packages
 
 1. ```ssh jl2815@amarel.rutgers.edu```               # Access the command line using SSH
 2. ```module use /projects/community/modulefiles```  # Use the community module files
@@ -26,7 +24,7 @@ conda env list
                                                  .conda/envs: This directory is where you can store your Conda environments.
 10. ```conda create --prefix /home/jl2815/.conda/envs/gems_tco python=3.8```
                                                # Create the gems_tco environment within the .conda/envs directory. This keeps your environments organized and separate from the default Conda
-# conda update conda                           # (I DON'T HAVE PERMISSION TO WRITE). Upgrade the latest version of conda from *base environment         # check conda --version
+'''conda update conda'''                            # (I DON'T HAVE PERMISSION TO WRITE). Upgrade the latest version of conda from *base environment         # check conda --version
 
 11. ```module avail cuda```                          # You need to load the CUDA module before installing Pytorch with CUDA support. 
     ```module load cuda/12.1.0```
@@ -39,17 +37,17 @@ conda env list
 ```conda install tensorflow```
 13-3 Install additional Python packages:
 ```conda install pandas matplotlib seaborn scikit-learn```
-```conda install xarray jupyter netCDF4 typing scipy```                # collections and math are part of python standard library.
+```conda install xarray jupyter netCDF4 typing scipy```           # collections and math are part of python standard library.
                                                                    xarray is for netCDF4 and dont forget to install jupyter, otherwise you can't open personal jupyter in amarel.
 13-4 Install third-party packages using pip                      # You may not be able to install some of the packages using conda install. Then use pip. Not all packages are included in Conda's repositories.
-pip install skgstat
-
-
-
-
-pip install <package name>
-
-
+```pip install scikit-gstat```                                  #import skgstat  !pip in a jupyter notebook
+```pip list | grep scikit-gstat```
+13-5 Install my package 'gems_tco'
+```pip install -e /home/jl2815/tco/```
+13-6 Verify installation
+```pip list | grep GEMS_TCO```           
+```python -c "import GEMS_TCO; print('GEMS_TCO imported successfully')"``` 
+```pip show GEMS_TCO```
 
 ----------------------------------------------------------------------------------------------------------------------
 You can also use OnDemand interface or FastX interface to use amarel.
