@@ -1,16 +1,16 @@
 ## Creating and sharing environments in Python
 
--[Make and share environment](install_python.md)
+-[Create and share environment on a local computer](install_python.md)
 
 ## Rutgers Amarel (High Performance Cluster for Computing)
 
 -[Create an environment on Rutgers Amarel](amarel_environment.md)
 
--[Install mypackage on Amarel](install_mypackage_amarel.md)
+-[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)
 
 ## Creating my own Python package on a local computer
 
--[Make my own package](howtomakepackage.ipynb)
+-[Create ```gems_tco``` package](howtomakepackage.ipynb)
 
 ## C++ (visual studio + Resharper C++)
 
