@@ -12,6 +12,9 @@
 
 -[Create ```gems_tco``` package](howtomakepackage.ipynb)
 
+## Github version control
+-[Sync with Microsoft VScode](github_version_control.md)
+
 ## C++ (visual studio + Resharper C++)
 
 -[Download Visual Studio](https://visualstudio.microsoft.com/)
