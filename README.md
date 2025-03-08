@@ -1,3 +1,9 @@
+## Python setting in mac     
+- Download Anaconda    
+- Install git:  type git on terminal and install command line tool     
+- Clone respository from github    
+- Create environment see below to install environment.     
+
 ## Creating and sharing environments in Python
 
 -[Create and share environment on a local computer](install_python.md)
