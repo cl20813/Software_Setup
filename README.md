@@ -3,6 +3,8 @@
 - Install git:  type git on terminal and install command line tool     
 - Clone respository from github    
 - Create environment see below to install environment.     
+- Install GEMS_TCO package. Then navigate to the current working proejct and then install pytorch    
+'''conda install pytorch torchvision torchaudio cpuonly -c pytorch'''     
 
 ## Creating and sharing environments in Python
 
