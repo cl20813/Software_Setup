@@ -59,6 +59,10 @@ Similarly,
 
 
 
+## aws guide
+
+-[aws guide](aws.md)
+
 
 
 
