@@ -1,5 +1,5 @@
 ## Python setting in mac     
-- [Download Anaconda][install_python.md](https://www.anaconda.com/download)       
+- [Download Anaconda](https://www.anaconda.com/download)    
 - Install git: type git on terminal and install command line tool    
 - [Install VScode][install_python.md](https://code.visualstudio.com/)   (recommended for ML and Statistics)
 - Clone respository from github    
