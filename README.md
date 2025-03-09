@@ -1,11 +1,11 @@
 ## Python setting in mac     
-- [Download Anaconda]([install_python.md](https://www.anaconda.com/download)       
+- [Download Anaconda][install_python.md](https://www.anaconda.com/download)       
 - Install git: type git on terminal and install command line tool    
-- [Install VScode]([install_python.md](https://code.visualstudio.com/)   (recommended for ML and Statistics)
-- 
+- [Install VScode][install_python.md](https://code.visualstudio.com/)   (recommended for ML and Statistics)
 - Clone respository from github    
-- Create environment see below to install environment.     
-- Install GEMS_TCO package. Then navigate to the current working proejct and then install pytorch    
+- Create environment. (see below)    
+- Install GEMS_TCO package. (see below)    
+- Install Pytorch package. Navigate to the current working proejct and then install pytorch    
 '''conda install pytorch torchvision torchaudio cpuonly -c pytorch'''     
 
 ## Creating and sharing environments in Python
