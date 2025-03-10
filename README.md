@@ -1,6 +1,9 @@
 ## Python setting in mac     
 - [Download Anaconda](https://www.anaconda.com/download)    
-- Install git: type git on terminal and install command line tool    
+- Install git: type '''git''' on terminal and install command line tool   
+  After installing git, you need to set configuration for your identity.   
+  '''git config --global user.email "you@example.com"'''   
+  '''git config --global user.name "Your Name"'''   
 - [Install VScode](https://code.visualstudio.com/)   (recommended for ML and Statistics)
 - Now you can clone respository from github    
 - Create an environment. (see below)    
