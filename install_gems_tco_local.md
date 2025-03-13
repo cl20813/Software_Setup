@@ -7,6 +7,12 @@ Note that '''pyproject.toml''' and '''setup.py''' are located at /Users/joonwonl
 
 ``` /opt/anaconda3/envs/gems_tco/bin/python -m pip install -e . --use-pep517 ```
 
+The --use-pep517 flag in the pip install command tells pip to use the PEP 517 build system. It allows for a more flexible and modern approach to building and installing packages, separate from the traditional setup.py method.
+
+PEP 517 Compatibility: Ensures that the build process follows the standards defined in PEP 517, allowing you to use pyproject.toml for configuration.
+
+The ```pyproject.toml file specifies the build system requirements and configuration```, while the ```setup.py file defines the package metadata and installation instructions```.
+
 # Window:
 
 Open the anaconda command prompt because environment 'jl2815' is under there
