@@ -16,6 +16,9 @@ PEP 517 Compatibility: Ensures that the build process follows the standards defi
 
 The ```pyproject.toml file specifies the build system requirements and configuration```, while the ```setup.py file defines the package metadata and installation instructions```.
 
+## If your environemnt still can't find the package then make sure to change your working directory.
+Python's ability to locate modules indeed depends on the current working directory and sys.path. When your working directory is GEMS_TCO/exercise, Python might not be able to find the GEMS_TCO module because it's looking for it relative to that directory.
+
 # Window:
 
 Open the anaconda command prompt because environment 'jl2815' is under there
