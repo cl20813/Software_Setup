@@ -23,7 +23,7 @@
 
 ## Creating my own Python package on a local computer
 
--[Create ```gems_tco``` package](howtomakepackage.ipynb)
+-[Create ```gems_tco``` package](install_gems_tco_local.md)
 
 ## Github Version Control
 -[Sync with Microsoft VScode](github_version_control.md)
