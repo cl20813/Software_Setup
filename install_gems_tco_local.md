@@ -2,7 +2,7 @@
 
 ```conda activate gems_tco``` Don't for this if you want to make change in virtual environment.    
 Go to command or terminal in VSCode and ```pip install --upgrade pip``` to use -e editable option.   
-```cd /Users/joonwonlee/GEMS_TCO/GEMS_TCO```
+```cd /Users/joonwonlee/Documents/GEMS_TCO-1/src ```
 
 Note that '''pyproject.toml''' and '''setup.py''' are located at /Users/joonwonlee/GEMS_TCO/.
 
