@@ -20,6 +20,8 @@ Here is a helpful [cheatsheet](https://conda.io/projects/conda/en/latest/user-gu
 ### Share environment
 1. Both pip packages and conda packages
 ```conda env export > my_env.yml```
+mac:
+``` conda env export > /Users/joonwonlee/Documents/GEMS_TCO-1/faiss_env.yml```     
 This will make my_env.yml file in current working directory.   
 
 3. Only include packages you've explicitly asekd for.
@@ -30,8 +32,8 @@ Also, this is not the best example of channel ordering in a YAML. Better practic
 ### Create an environment from an .yml file
 1. Create an environment from an .yml file (the file has to be in the current working directory) :                      
 ```conda env create -f name.yml```
-or you can do this:
-```conda env create --file /path/to/environment.yml```   
+mac:        
+```conda env create --file /Users/joonwonlee/Documents/GEMS_TCO-1/faiss_env.yml```   
 3. To verify that the new environment was installed correctly:               
 ```conda env list```              
 4. Updating current working environment based on provided .yml file:             
