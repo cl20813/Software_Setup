@@ -6,7 +6,7 @@
   ```git config --global user.name "Your Name"```      
 - [Install VScode](https://code.visualstudio.com/)   (recommended for ML and Statistics)
 - Now you can clone respository from github    
-- Create an environment. (see below)    
+- Create a Python Environment. (see below)    
 - Install GEMS_TCO package. (see below)    
 - Install Pytorch package: Navigate to the current working proejct and then install pytorch.   
 '''conda install pytorch torchvision torchaudio cpuonly -c pytorch'''     
