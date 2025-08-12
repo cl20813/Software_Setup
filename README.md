@@ -23,7 +23,7 @@
 -[Sync with Microsoft VScode](github_version_control.md)   
 
 ## AWS Setting
--[EC2, VS code, Environment Setting](aws_ec2_vs_code_environment.md)     
+-[EC2, and VS Code, Environment Setting](aws_ec2_vs_code_environment.md)     
 -[aws guide](aws.md)   
 
 ## Rutgers Amarel (High Performance Cluster for Computing)
