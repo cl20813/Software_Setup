@@ -5,8 +5,8 @@ Download Anaconda [here](https://www.anaconda.com/download).
 ### Creating an environment 
 
 1. Open Terminal
-2. Create an environment called `msds534` using `conda` with the command:
-   ```conda create --name msds534```
+2. Create an environment called `jl2815` using `conda` with the command:
+   ```conda create --name jl2815```
 3. To install packages in your environment, first activate your environment:
    ```conda activate msds534```
 4. Then, install the following packages using the command:
