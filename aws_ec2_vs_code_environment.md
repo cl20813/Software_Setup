@@ -18,12 +18,16 @@ Inbound rules - Edit inbound rules - ```type:ssh, source:MY IP, 128.6.147.81/32`
 Go to  Elastic IPs in EC2 and then allocate default - action - associate instance.
 
 ### VS code
-On the left, click remote explorer - enter ```ssh ec2-user@172.31.44.24```, this is private IP. Then open configuration file and type:
+On the left, click remote explorer - enter ```ssh ec2-user@52.21.144.182```, this is public or elastic IP. Then open configuration file and type:
 
 Host AWS_EC2     
      HostName 52.21.144.182 # note that we can use elastic ip here but use private ip for ```ssh ec2-user@172.31.44.24```    
      User ec2-user (default)     
      IdentifyFile /Users/joonwonlee/Documents/AWS/gems_tco_key.pem (I generated and saved the key file when lanuching the instance above -key_pair      
+
+## COMMON ERROR WHEN TERMINATE AND RECREATE INSTANCE, WHEN THE INSTANCE WAS REBUILT, SSH FINGER PRINT CHANGED    
+You can also remove the entry by IP:    
+```ssh-keygen -R 52.21.144.182```       
      
 ## Python environment in EC2 
 
