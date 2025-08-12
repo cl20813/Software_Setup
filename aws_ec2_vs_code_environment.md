@@ -4,12 +4,12 @@ Go to EC2 and then click ```launch instance```
 
 Name and tags: ```gems_tco```   
 ```Amazon Linux 2023 AMI Kernel 6.1```   
-```64-bit(x86)``` (arcithecture that is optimized for cpu process)   
-Instance type: ```c6i.2xlarge```   
-key_pair (login) create a new key called ```gems_tco_key```, and save it in the download directory.
-Security: ```Allow ssh traffic from my IP: 128.6.147.81/32```  81/32 use either one, and if my mac IP changes, then go to 
+```64-bit(x86)``` (arcithecture that is optimized for cpu process)      
+Instance type: ```c6i.2xlarge```      
+key_pair (login) create a new key called ```gems_tco_key```, and save it in the download directory.   
+Security: ```Allow ssh traffic from my IP: 128.6.147.81/32```  81/32 use either one, and if my mac IP changes, then go to  
 
-Inbound rules - Edit inbound rules - ```type:ssh, source:custom, 128.6.147.81/32``` and then click save rules.
+Inbound rules - Edit inbound rules - ```type:ssh, source:custom, 128.6.147.81/32``` and then click save rules.  
 
 ## Connect VS-Code
 ### Elastic IP
