@@ -13,8 +13,8 @@
 
 ## Creating and sharing environments in Python
 
--[Create and share environment on a local computer](install_python.md)
--[Create ```gems_tco``` package](install_gems_tco_local.md)
+-[Create and share environment on a local computer](install_python.md)   
+-[Create ```gems_tco``` package](install_gems_tco_local.md)   
 
 ## Github Version Control
 -[Sync with Microsoft VScode](github_version_control.md)
@@ -25,8 +25,8 @@
 
 ## Rutgers Amarel (High Performance Cluster for Computing)
 
--[Create an environment on Rutgers Amarel](amarel_environment.md)
--[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)
+-[Create an environment on Rutgers Amarel](amarel_environment.md)   
+-[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)    
 
 ## C++ (visual studio + Resharper C++)
 
