@@ -10,6 +10,8 @@
 - Install GEMS_TCO package. (see below)    
 - Install Pytorch package: Navigate to the current working proejct and then install pytorch.   
 '''conda install pytorch torchvision torchaudio cpuonly -c pytorch'''     
+- Compile c++ file:
+-[Create an environment and Compile ```maxmin.cpp``` file on local, and AMAREL](faiss_env.md)
 
 ## Creating and sharing environments in Python
 
