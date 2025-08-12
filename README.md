@@ -66,6 +66,10 @@ Similarly,
 
 -[aws guide](aws.md)
 
+-[EC2, VS code, Environment set up](aws_ec2_vs_code_environment.md)
+
+
+
 
 
 
