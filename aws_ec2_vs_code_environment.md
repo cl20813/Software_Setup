@@ -6,7 +6,9 @@ Name and tags: ```gems_tco```
 ```Amazon Linux 2023 AMI Kernel 6.1```   
 ```64-bit(x86)``` (arcithecture that is optimized for cpu process)      
 Instance type: ```c6i.2xlarge```      
-key_pair (login) create a new key called ```gems_tco_key```, and save it in the download directory.   
+key_pair (login) create a new key called ```gems_tco_key```, and save it in the download directory. Then 
+```chmod 400 /Users/joonwonlee/Documents/AWS/gems_tco_key.pem``` just for once for each key.     
+
 Security: ```Allow ssh traffic from my IP: 128.6.147.81/32```  81/32 use either one, and if my mac IP changes, then go to  
 
 Inbound rules - Edit inbound rules - ```type:ssh, source:MY IP, 128.6.147.81/32``` and then click save rules.  
@@ -16,7 +18,7 @@ Inbound rules - Edit inbound rules - ```type:ssh, source:MY IP, 128.6.147.81/32`
 Go to  Elastic IPs in EC2 and then allocate default - action - associate instance.
 
 ### VS code
-On the left, click remote explorer - enter ```ssh ec2-user@128.6.147.81``` then open configuration file and type:
+On the left, click remote explorer - enter ```ssh ec2-user@172.31.44.24``` then open configuration file and type:
 
 Host AWS_EC2     
      HostName 52.21.144.182 (elastic IP)     
