@@ -14,19 +14,19 @@
 ## Creating and sharing environments in Python
 
 -[Create and share environment on a local computer](install_python.md)
-
-## Rutgers Amarel (High Performance Cluster for Computing)
-
--[Create an environment on Rutgers Amarel](amarel_environment.md)
-
--[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)
-
-## Creating my own Python package on a local computer
-
 -[Create ```gems_tco``` package](install_gems_tco_local.md)
 
 ## Github Version Control
 -[Sync with Microsoft VScode](github_version_control.md)
+
+## AWS Setting
+-[EC2, VS code, Environment set up](aws_ec2_vs_code_environment.md)
+-[aws guide](aws.md)
+
+## Rutgers Amarel (High Performance Cluster for Computing)
+
+-[Create an environment on Rutgers Amarel](amarel_environment.md)
+-[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)
 
 ## C++ (visual studio + Resharper C++)
 
@@ -62,11 +62,9 @@ Similarly,
 
 
 
-## aws guide
 
--[aws guide](aws.md)
 
--[EC2, VS code, Environment set up](aws_ec2_vs_code_environment.md)
+
 
 
 
