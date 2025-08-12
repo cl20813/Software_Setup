@@ -26,7 +26,7 @@ Host AWS_EC2
      IdentifyFile /Users/joonwonlee/Documents/AWS/gems_tco_key.pem (I generated and saved the key file when lanuching the instance above -key_pair      
 
 ## COMMON ERROR WHEN TERMINATE AND RECREATE INSTANCE, WHEN THE INSTANCE WAS REBUILT, SSH FINGER PRINT CHANGED    
-You can also remove the entry by IP:    
+You can solve the issue by removing the entry by IP:    
 ```ssh-keygen -R 52.21.144.182``` 
 
 ## Clone git repository
