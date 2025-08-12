@@ -35,7 +35,8 @@ You can also remove the entry by IP:
 ```mkdir env```   
 ```cd env```           
 ```python3 -m venv gems_tco_env```    #venv use the same python version that is used on the system    
-```source gems_tco_env/bin/activate```    
+```cd ```    
+```source ./env/gems_tco_env/bin/activate```    
 
 ```/home/ec2-user/env/gems_tco_env/bin/python3 -m pip install --upgrade pip```    
 ```pip install faiss-cpu pybind11 numpy pandas matplotlib seaborn scikit-learn xarray netCDF4 typer```      
@@ -49,6 +50,13 @@ You can also remove the entry by IP:
 ```sudo yum install python3-pip -y```      
 ```pip install -e . --use-pep517```     
 ```pip install ipykernel```   
+
+### Compile c++ file
+```cd /home/ec2-user/GEMS_TCO/src/GEMS_TCO/cpp_src```
+```sudo yum groupinstall "Development Tools" -y```  
+```sudo dnf install python3-devel -y```  # python development header
+```c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) maxmin_ancestor.cpp -o ../maxmin_ancestor_cpp.so```
+```c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) maxmin.cpp -o ../maxmin_cpp.so```
 
 
 
