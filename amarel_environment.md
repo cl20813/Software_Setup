@@ -106,16 +106,7 @@ This is a fast x a littel different environment more suitable for R. Unlike Open
 #### Remove previous environment
 ```conda deactivate```
 ```conda env remove -n gems_tco```
-
-
-## Now I want to use the same environment on my local computer.
-
-1. Export the environment:          
-```conda env export > gems_tco.yml```            
-2. Transfer the .yml file to your local computer.        
-3. Create the environment on your local computer:         
-Open the anaconda powershell prompt and enter.            
-```conda env create --file C:\Users\joonw\Downloads\gems_tco.yml```            
+     
 
 
 
