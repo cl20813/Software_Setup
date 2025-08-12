@@ -1,5 +1,6 @@
 
 ## Launch Instance
+Go to EC2 and then click ```launch instance```
 
 Name and tags: ```gems_tco```   
 ```Amazon Linux 2023 AMI Kernel 6.1```   
