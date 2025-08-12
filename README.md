@@ -18,8 +18,9 @@
 -[Create and share environment on a local computer](install_python.md)   
 -[Create ```gems_tco``` package](install_gems_tco_local.md)   
 
-## Github Version Control
--[Sync with Microsoft VScode](github_version_control.md)
+## Github Version Control   
+-[Download git](https://git-scm.com/downloads/win)    
+-[Sync with Microsoft VScode](github_version_control.md)   
 
 ## AWS Setting
 -[EC2, VS code, Environment set up](aws_ec2_vs_code_environment.md)     
@@ -39,8 +40,6 @@ Select the DESKTOP DEVELOPMENT WITH C++ workload.
 Make sure to select the C++ option. Then register JetBrains Product for students.
 
 Installing Eigen (including unsupported Modules), gsl libraries. 
-
--[Download git](https://git-scm.com/downloads/win)
 
 -Open the git bash and then install vcpkg, by running:        
 git clone https://github.com/microsoft/vcpkg              
