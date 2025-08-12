@@ -18,17 +18,17 @@ Go to  Elastic IPs in EC2 and then allocate default - action - associate instanc
 ### VS code
 On the left, click remote explorer - enter ```ssh ec2-user@128.6.147.81``` then open configuration file and type:
 
-Host AWS_EC2
-     HostName 52.21.144.182 (elastic IP)
-     User ec2-user (default)
-     IdentifyFile /Users/joonwonlee/Documents/AWS/gems_tco_key.pem (I generated and saved the key file when lanuching the instance above -key_pair 
+Host AWS_EC2     
+     HostName 52.21.144.182 (elastic IP)     
+     User ec2-user (default)     
+     IdentifyFile /Users/joonwonlee/Documents/AWS/gems_tco_key.pem (I generated and saved the key file when lanuching the instance above -key_pair      
+     
+## Python environment in EC2 
 
-## Python environment in EC2
+cd <environment location>   
+```python -m venv gems_tco_env```    #venv use the same python version that is used on the system    
+```source gems_tco_env/bin/activate```    
 
-cd <environment location>
-```python -m venv gems_tco_env```    #venv use the same python version that is used on the system
-```source gems_tco_env/bin/activate```
-
-```pip install faiss-cpu pybind11 numpy pandas matplotlib seaborn scikit-learn xarray netCDF4 typer```
+```pip install faiss-cpu pybind11 numpy pandas matplotlib seaborn scikit-learn xarray netCDF4 typer```   
 
      
