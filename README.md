@@ -1,4 +1,4 @@
-## Python setting in mac     
+## Python Setting on My Macbook Pro.     
 - [Download Anaconda](https://www.anaconda.com/download)    
 - Install git: type ```git``` on terminal and install command line tool   
   After installing Git, you need to set the configuration for your identity.   
@@ -13,7 +13,7 @@
 - Compile c++ file:
 -[Create an environment and Compile ```maxmin.cpp``` file on local, and AMAREL](faiss_env.md)
 
-## Creating and sharing environments in Python
+## Creating and Sharing Environments in Python
 
 -[Create and share environment on a local computer](install_python.md)   
 -[Create ```gems_tco``` package](install_gems_tco_local.md)   
@@ -23,12 +23,12 @@
 -[Sync with Microsoft VScode](github_version_control.md)   
 
 ## AWS Setting
--[EC2, VS code, Environment set up](aws_ec2_vs_code_environment.md)     
+-[EC2, VS code, Environment Setting](aws_ec2_vs_code_environment.md)     
 -[aws guide](aws.md)   
 
 ## Rutgers Amarel (High Performance Cluster for Computing)
 
--[Create an environment on Rutgers Amarel](amarel_environment.md)      
+-[Create Python Environment on Rutgers Amarel](amarel_environment.md)      
 -[Install ```gems_tco``` package on Amarel](install_mypackage_amarel.md)       
 
 ## C++ (visual studio + Resharper C++)
